@@ -222,7 +222,7 @@ You can inspect and compile custom Star-Schema slices directly via the **[Intera
 ## 🗺️ Future Roadmap (v2.0 Architecture)
 
 <div align="center">
-<img src="docs/architecture_roadmap_v2.jpg" alt="Nexus-H3 v2.0 Fault-Isolated & Self-Cached Roadmap Architecture" width="70%"/>
+<img src="[docs/architecture_roadmap_v2.jpg](https://github.com/user-attachments/assets/75400d33-7c58-4fd7-bce3-61c0f418d150)" alt="Nexus-H3 v2.0 Fault-Isolated & Self-Cached Roadmap Architecture" width="70%"/>
 </div>
 
 To evolve Nexus-H3 from a foundational Grand Paris observatory into a fault-isolated, multi-season benchmark suite, five engineering extensions are underway:
