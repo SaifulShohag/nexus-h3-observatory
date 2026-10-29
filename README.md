@@ -271,7 +271,7 @@ If you use the Nexus-H3 observatory, compilation workbench, or benchmark snapsho
   year        = {2026},
   institution = {Institut Polytechnique de Paris, Palaiseau, France},
   note        = {Preprint, October 2026},
-  doi         = {http://doi.org/10.5281/zenodo.23749898},
+  doi         = {https://doi.org/10.5281/zenodo.23749898},
   url         = {https://github.com/SaifulShohag/nexus-h3-observatory}
 }
 ```
