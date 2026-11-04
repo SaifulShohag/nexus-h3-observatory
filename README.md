@@ -33,7 +33,7 @@ Modern metropolitan mobility systems operate as tightly coupled, multi-modal net
 ## 🏙️ The Benchmark
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/e12d5069-4524-46e2-8fcd-16fdfca4a504" alt="Grand Paris multi-modal benchmark on the H3 hexagonal grid" width="100%"/>
+<img src="https://github.com/user-attachments/assets/6440f05f-a6b1-45f9-96ae-18583e65e3a0" alt="Grand Paris multi-modal benchmark on the H3 hexagonal grid" width="100%"/>
 </div>
 
 <div align="center">
