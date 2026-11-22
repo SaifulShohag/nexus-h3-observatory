@@ -69,7 +69,7 @@ The live React page exposes all 53 columns with type, units, description, and ze
 ## Production System Architecture
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/a91a9513-8383-480f-a20f-1a3d0bf9a370" alt="Nexus-H3 decoupled architecture" width="70%"/>
+<img src="https://github.com/user-attachments/assets/a91a9513-8383-480f-a20f-1a3d0bf9a370" alt="Nexus-H3 decoupled architecture" width="85%"/>
 </div>
 
 Nexus-H3 separates ingestion, coordination, caching, object storage, and user-side compilation into tightly bounded subsystems:
@@ -114,7 +114,7 @@ Pre-built wheels are available for Windows, macOS, Linux x86_64, and Linux AArch
 
 ---
 
-## Systems and Modeling Results
+## Systems and Cost Results
 
 ### Systems Benchmarks
 
@@ -125,31 +125,6 @@ Pre-built wheels are available for Windows, macOS, Linux x86_64, and Linux AArch
 | ZSTD compaction | 287.46 MB -> 170.02 MB, 40.9% smaller |
 | Daily 24-slice commit | 96.0 seconds -> 13.0 seconds, 7.4x faster |
 | Native 8-day scalar export | 3,128.91 MiB over 12 parallel HTTP/1.1 streams; 21.06 seconds local compile/merge |
-
-### 30-Minute Forecast Utility
-
-On the 470-window weekday snapshot (3,890,190 rows, chronological 70/15/15 split, `SEED = 42`):
-
-| Baseline | MAE | RMSE | MAPE |
-|:---|---:|---:|---:|
-| Historical Average | 6.607 | 9.629 | 91.36% |
-| Persistence / LOCF | 2.505 | 5.776 | 22.53% |
-| LightGBM, dynamic features | 2.151 | 4.487 | 20.78% |
-| Temporal residual, no graph | 2.153 | 4.549 | 20.96% |
-| LightGBM with static morphology and H3 lags | 2.147 | 4.477 | 21.06% |
-| H3-GNN with H3 graph and static morphology | 2.144 | 4.541 | 20.91% |
-
-The experiments validate reproducibility and out-of-the-box benchmark utility; they do not claim SOTA forecasting superiority.
-
-### Zero-Shot Spatial Transfer
-
-Intra-Muros training (814 active cells) transfers to 369 suburban active cells:
-
-| Transfer Configuration | MAE | RMSE | MAPE |
-|:---|---:|---:|---:|
-| Suburban persistence / LOCF | 1.272 | 3.212 | 15.31% |
-| Topology-agnostic dynamic features | 1.124 | 1.967 | 15.94% |
-| Morphology-conditioned features and H3 graph | 1.125 | 1.990 | 15.68% |
 
 ### Total Cost of Ownership
 
